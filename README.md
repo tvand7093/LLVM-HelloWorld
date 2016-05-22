@@ -16,9 +16,9 @@ These are the following specifications regaurding the install.
 
 1. Download the [prebuilt LLVM binaries](http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-apple-darwin.tar.xz).
 2. Extract the contents of the download to any folder location.
-3. Create the following folder: /usr/local/llvm.
+3. Create the following folder: `/usr/local/llvm`.
 4. Copy the extracted contents into the newly created llvm folder.
-5. Add the /usr/local/llvm/bin path to your shell profile with the following: 
+5. Add the `/usr/local/llvm/bin` path to your shell profile with the following: 
   
   ```bash
   export PATH = "$PATH:/usr/local/llvm/bin"
@@ -28,10 +28,11 @@ These are the following specifications regaurding the install.
 ### Trying it out
 
 To try and build this test application, run the make command.
-If make complains about the file
+If make complains about a file (see below) as missing/skipped you must install the correct SDK.
+```
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
-missing, then clone the [SDK Repository](https://github.com/phracker/MacOSX-SDKs) and change into the newly cloned folder.
-Next, run the following command:
+```
+To install the missing SDK, clone the [SDK Repository](https://github.com/phracker/MacOSX-SDKs) and change directories into the newly cloned folder. Next, run the following command to install it to the appropriate location:
 
 ```bash
 sudo cp -r MacOSX10.10.sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
