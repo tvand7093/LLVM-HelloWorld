@@ -14,14 +14,15 @@ These are the following specifications regaurding the install.
 
 ### Installing LLVM
 
-1. Download the [prebuilt LLVM binaries](http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-apple-darwin.tar.xz)
+1. Download the [prebuilt LLVM binaries](http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-apple-darwin.tar.xz).
 2. Extract the contents of the download to any folder location.
 3. Create the following folder: /usr/local/llvm.
 4. Copy the extracted contents into the newly created llvm folder.
-5. Add the /usr/local/llvm/bin path to your shell profile with the following:
-```bash
-export PATH = "$PATH:/usr/local/llvm/bin"
-```
+5. Add the /usr/local/llvm/bin path to your shell profile with the following: 
+  
+  ```bash
+  export PATH = "$PATH:/usr/local/llvm/bin"
+  ``` 
 6. Next, reload your user profile by running `source ~/.bashrc`.
 
 ### Trying it out
