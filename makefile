@@ -34,5 +34,6 @@ $(FRONT):  main.cpp
 $(BITCODE_TEST).bc: $(BITCODE_TEST).cpp
 	$(CXX) -S -emit-llvm $^ -o $@
 
+# Clean up any junk or temp files created.
 clean:
 	@rm -rf *.dSYM *~ \#*\# *.bc *.o *.ir $(EXE)*
