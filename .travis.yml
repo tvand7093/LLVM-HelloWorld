@@ -1,0 +1,36 @@
+
+# Travis CI build configuration
+# Creator: Tyler Vanderhoef
+# https://travis-ci.org/tvand7093/Princess-Language
+
+# Specify the OS types to build on
+os:
+  - linux
+  - osx
+
+# The language to use while building
+language: cpp
+
+# The script to run when it builds on Travis CI
+script: make && make test
+
+# The compiler to target. Here, we use both clang and gcc to see
+# if the build works for both systems.
+compiler:
+  - clang
+
+#install:
+#  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - clang
+    - llvm
+
+notifications:
+  email: 
+    on_success: never
+    on_failure: always
