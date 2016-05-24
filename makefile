@@ -25,6 +25,7 @@ $(EXE).bc: $(FRONT)
 
 # Build frontend application for emitting bitcode
 $(FRONT): main.cpp
+	@echo $(LLVM)
 	$(CXX) -g $^ $(LLVM) -o $@
 
 $(BITCODE_TEST).bc: $(BITCODE_TEST).cpp
