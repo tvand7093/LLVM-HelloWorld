@@ -4,9 +4,11 @@
 
 # Specify the OS types to build on
 os:
-  - linux
+  #- linux
   - osx
 
+osx_image: xcode6.4
+  
 # The language to use while building
 language: cpp
 
@@ -18,8 +20,8 @@ script: make && make test
 compiler:
   - clang
 
-#install:
-#  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+install:
+  - export PATH = `$PATH:$(brew --prefix llvm)/bin`
 
 addons:
   apt:
