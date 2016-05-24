@@ -20,9 +20,6 @@ script: make && make test
 compiler:
   - clang
 
-install:
-  - export PATH = `$PATH:$(brew --prefix llvm)/bin`
-
 addons:
   apt:
     sources:
