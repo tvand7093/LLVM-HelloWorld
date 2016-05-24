@@ -4,11 +4,11 @@ FRONT = $(EXE)-frontend
 BITCODE_TEST = bitcode-test
 
 # Determine how we are getting the location for LLVM
-ifeq (,$(shell which llvm-config))
-	export LLVM_LOC=$(shell brew --prefix llvm)/bin
-else
-	export LLVM_LOC=$(shell llvm-config --prefix)/bin
-endif
+#ifeq (,$(shell which llvm-config))
+#	export LLVM_LOC=$(shell brew --prefix llvm)/bin
+#else
+#	export LLVM_LOC=$(shell llvm-config --prefix)/bin
+#endif
 
 # Now we have the install location, so configure the settings 
 LLVM_CONFIG=`llvm-config --cxxflags --ldflags --libs --system-libs core`
