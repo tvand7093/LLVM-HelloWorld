@@ -15,7 +15,7 @@ These are the following specifications regaurding the install.
 
 ### Installing LLVM
 
-1. Download the [prebuilt Mac OS LLVM binaries](http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-apple-darwin.tar.xz) or [Ubuntu]().
+1. Download the [prebuilt Mac OS LLVM binaries](http://llvm.org/releases/3.8.0/clang+llvm-3.8.0-x86_64-apple-darwin.tar.xz) or the appropriate [Ubuntu binaries found here](http://llvm.org/releases/3.8.0).
 2. Extract the contents of the download to any folder location.
 3. Create the following folder: `/usr/local/llvm`.
 4. Copy the extracted contents into the newly created llvm folder.
