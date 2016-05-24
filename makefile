@@ -4,7 +4,7 @@ FRONT = $(EXE)-frontend
 BITCODE_TEST = bitcode-test
 
 # Now we have the install location, so configure the settings 
-LLVM_CONFIG=`llvm-config --cxxflags --ldflags --libs --system-libs core`
+LLVM_CONFIG=`llvm-config-3.8 --cxxflags --ldflags --libs --system-libs core`
 
 # Build out exe file.
 all: $(EXE)
