@@ -23,6 +23,7 @@ These are the following specifications regaurding the install.
   
   ```bash
   export PATH = "$PATH:/usr/local/llvm/bin"
+  # If on Ubuntu, you need to set clang as the default compiler. g++ will not do!
   export CXX = clang++
   ``` 
 6. Next, reload your user profile by running `source ~/.bashrc`.
