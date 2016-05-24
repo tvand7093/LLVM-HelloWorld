@@ -27,9 +27,9 @@ addons:
       - llvm-toolchain-precise
       - ubuntu-toolchain-r-test
     packages:
-    - clang
+    - clang-3.7
     - zlib1g-dev
-    - llvm
+    - llvm-3.7
 
 notifications:
   email: 
