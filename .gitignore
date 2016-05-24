@@ -3,3 +3,4 @@
 *~
 llvmtest
 hello-llvm*
+bitcode-test.bc
