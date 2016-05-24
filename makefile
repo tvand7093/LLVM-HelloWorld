@@ -30,7 +30,7 @@ $(FRONT):  main.cpp
 	@echo $(LLVM_CONFIG)
 	$(CXX) -g $^ $(LLVM_CONFIG) -o $@
 
-
+# Create a bitcode file
 $(BITCODE_TEST).bc: $(BITCODE_TEST).cpp
 	$(CXX) -S -emit-llvm $^ -o $@
 
