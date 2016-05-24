@@ -12,7 +12,7 @@ os:
 language: cpp
 
 # The script to run when it builds on Travis CI
-script: make && make test
+script: make
 
 # The compiler to target. Here, we use both clang and gcc to see
 # if the build works for both systems.
