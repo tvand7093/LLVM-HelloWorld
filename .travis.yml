@@ -22,7 +22,7 @@ compiler:
 
 #install:
     #- if [ "$CXX" = "g++" ]; then export CXX="g++-5" CC="gcc-5"; fi
-    #- if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.7" CC="clang-3.7"; fi
+    - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.7" CC="clang-3.7"; echo $CXX; fi
 
 addons:
   apt:
@@ -31,7 +31,7 @@ addons:
       - llvm-toolchain-precise-3.8
       - ubuntu-toolchain-r-test
     packages:
-   # - clang-3.7
+    - clang-3.7
     - zlib1g-dev
     - llvm-3.8
     - llvm-3.8-dev
