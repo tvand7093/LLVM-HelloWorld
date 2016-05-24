@@ -1,4 +1,3 @@
-
 ### LLVM Hello World
 
 This repository is the testing bed for a Hello World example of LLVM. This repository
