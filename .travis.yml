@@ -5,7 +5,6 @@
 # Specify the OS types to build on
 os:
   - linux
-  #- osx
 
 #osx_image: xcode6.4
   
