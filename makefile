@@ -3,8 +3,8 @@ EXE = hello-llvm
 FRONT = $(EXE)-frontend
 BITCODE_TEST = bitcode-test
 
-LLVM_VER = 
-
+# LLVM_VER is a variable that should be set in the build. For development,
+# this version just uses the installed one so the number is not needed.
 # Now we have the install location, so configure the settings 
 LLVM_CONFIG=`llvm-config$(LLVM_VER) --cxxflags --ldflags --libs --system-libs core`
 
