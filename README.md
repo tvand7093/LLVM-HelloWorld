@@ -33,6 +33,9 @@ These are the following specifications regaurding the install.
 To try and build this test application, run the make command. This should output a binary file called `hello-llvm` that you can run and should 
 print the value: `value = 3`.
 
+### Inspecting simple LLVM IR
+If you simply want to see what a small program looks like in IR, run `make test`. This will dump the IR created for the `bitcode-test.cpp` file. The output file name will be called `bitcode-test.bc`, just open in a text editor and browse!
+
 ### Troubleshooting (OSX Only)
 
 If make complains about a file (see below) as missing/skipped you must install the correct SDK.
