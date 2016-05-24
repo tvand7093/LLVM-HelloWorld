@@ -30,7 +30,7 @@ addons:
     - llvm-3.8
     - llvm-3.8-dev
 env:
-  - LLVM_VER = -3.8
+  - LLVM_VER=-3.8
    
 notifications:
   email: 
