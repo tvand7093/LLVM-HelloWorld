@@ -28,7 +28,7 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
     - clang
-    - llvm
+    - llvm-3.8
 
 notifications:
   email: 
