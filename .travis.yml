@@ -32,7 +32,7 @@ addons:
     packages:
     - clang-3.7
     - zlib1g-dev
-    - llvm-3.8
+    - llvm-3.7
 
 notifications:
   email: 
