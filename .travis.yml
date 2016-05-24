@@ -26,7 +26,7 @@ addons:
       - llvm-toolchain-precise-3.8
       - ubuntu-toolchain-r-test
     packages:
-    -clang-3.7
+    - clang-3.7
     - zlib1g-dev
     - llvm-3.8
     - llvm-3.8-dev
