@@ -1,7 +1,6 @@
 
 # Travis CI build configuration
 # Creator: Tyler Vanderhoef
-# https://travis-ci.org/tvand7093/Princess-Language
 
 # Specify the OS types to build on
 os:
