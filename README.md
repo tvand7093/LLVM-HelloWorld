@@ -1,4 +1,5 @@
 ### LLVM Hello World
+[![Build Status](https://travis-ci.org/tvand7093/LLVM-HelloWorld.svg?branch=master)](https://travis-ci.org/tvand7093/LLVM-HelloWorld)
 
 This repository is the testing bed for a Hello World example of LLVM. This repository
 also contains the steps for installing LLVM on a Mac OS and Ubuntu, which seems like a daunting
