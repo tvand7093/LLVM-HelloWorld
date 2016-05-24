@@ -3,8 +3,10 @@ EXE = hello-llvm
 FRONT = $(EXE)-frontend
 BITCODE_TEST = bitcode-test
 
+LLVM_VER = 
+
 # Now we have the install location, so configure the settings 
-LLVM_CONFIG=`llvm-config-3.8 --cxxflags --ldflags --libs --system-libs core`
+LLVM_CONFIG=`llvm-config$(LLVM_VER) --cxxflags --ldflags --libs --system-libs core`
 
 # Build out exe file.
 all: $(EXE)
@@ -17,7 +19,7 @@ $(EXE): $(EXE).o
 
 # Create object file from bitcode file
 $(EXE).o: $(EXE).bc
-	llc -filetype=obj $^ -o $@
+	llc$(LLVM_VER) -filetype=obj $^ -o $@
 
 # Write bitcode from frontend application
 $(EXE).bc: $(FRONT)
